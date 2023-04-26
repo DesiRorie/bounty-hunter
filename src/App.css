@@ -31,10 +31,10 @@ body {
   background-color: #393e46;
   text-align: center;
   justify-content: center;
-  width: 50%;
+  min-width: 50%;
   min-width: 300px; /* dont forget to change */
 
-  height: 50vh;
+  min-height: 50vh;
   /* width: 400px; */
 }
 .startDiv {
