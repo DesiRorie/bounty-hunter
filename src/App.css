@@ -1,0 +1,69 @@
+:root {
+  --background-color: #222831;
+  --main-color: #393e46;
+  --action-color: #00adb5;
+  --action-text: #eeeeee;
+
+  background-color: var(--background-color);
+}
+
+body {
+  font-family: "Rubik Pixels", cursive;
+  color: #eeeeee;
+}
+.title {
+  color: var(--action-color);
+  text-align: center;
+}
+.displayContainer {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+
+  margin-top: 10rem;
+}
+
+.display {
+  display: flex;
+  border-radius: 5px;
+  background-color: #393e46;
+  text-align: center;
+  justify-content: center;
+  width: 50%;
+  min-width: 300px; /* dont forget to change */
+
+  height: 50vh;
+  /* width: 400px; */
+}
+.startDiv {
+  display: flex;
+  align-items: center;
+}
+
+.animate-text {
+  animation: grow-shrink 2.5s ease-in-out infinite;
+}
+@keyframes grow-shrink {
+  0% {
+    font-size: 16px;
+  }
+  50% {
+    font-size: 24px;
+  }
+  100% {
+    font-size: 16px;
+  }
+}
+.pathContainer {
+  margin-top: 30px;
+  display: grid;
+  gap: 10px;
+  /* grid-template-columns: 100%; */
+  grid-template-rows: 10vh 10vh 10vh;
+}
+.paths {
+  border: solid 1px;
+  border-color: var(--action-color);
+}
