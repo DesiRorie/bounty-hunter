@@ -50,7 +50,7 @@ body {
     font-size: 16px;
   }
   50% {
-    font-size: 24px;
+    font-size: 18px;
   }
   100% {
     font-size: 16px;
@@ -66,4 +66,18 @@ body {
 .paths {
   border: solid 1px;
   border-color: var(--action-color);
+}
+
+@media screen and (min-width: 350px) {
+  @keyframes grow-shrink {
+    0% {
+      font-size: 8px;
+    }
+    50% {
+      font-size: 9px;
+    }
+    100% {
+      font-size: 8px;
+    }
+  }
 }
