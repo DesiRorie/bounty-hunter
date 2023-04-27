@@ -5,7 +5,7 @@ const DragonLayout = () => {
     <>
       <div className="menuDiv">
         <ul>
-          <li>STORE</li>
+          <li>SHOP</li>
           <li>WEAPONS</li>
           <li>GOLD</li>
           <li>TRAVEL</li>
