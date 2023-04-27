@@ -3,7 +3,7 @@ import React from "react";
 const DragonLayout = () => {
   return (
     <>
-      <div className="menuOptions">
+      <div className="menuDiv">
         <ul>
           <li>STORE</li>
           <li>WEAPONS</li>

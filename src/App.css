@@ -31,8 +31,8 @@ body {
   background-color: #393e46;
   text-align: center;
   justify-content: center;
-  min-width: 50%;
-  min-width: 300px; /* dont forget to change */
+  min-width: 90%;
+  /* min-width: 300px; dont forget to change */
   width: 50vw;
 
   min-height: 50vh;
@@ -44,6 +44,25 @@ body {
 }
 .startDiv:hover {
   cursor: pointer;
+}
+.menuDiv {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+}
+.menuDiv ul {
+  width: 50%;
+  font-size: small;
+  display: flex;
+  justify-content: space-evenly;
+
+  padding: 0;
+}
+.menuDiv ul li {
+  width: 100%;
+  list-style: none;
+  margin: 5px;
 }
 
 .animate-text {
@@ -81,34 +100,6 @@ body {
   transform: scale(1.1);
   transition: 0.5s;
 }
-.menuOptions {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  font-size: large;
-  width: 100%;
-}
-.menuOptions ul {
-  display: flex;
-  border: 2px solid;
-  border-radius: 5px;
-  border-color: var(--action-color);
-  margin: 0;
-  padding: 1%;
-
-  justify-content: space-evenly;
-
-  /* flex-direction: row; */
-
-  width: 100%;
-  height: fit-content;
-
-  list-style: none;
-}
-.menuOptions ul li:hover {
-  opacity: 70%;
-  cursor: pointer;
-}
 
 @media screen and (min-width: 350px) {
   @keyframes grow-shrink {
@@ -121,19 +112,5 @@ body {
     100% {
       font-size: 8px;
     }
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .menuOptions ul {
-    font-size: 10px;
-    padding: 0;
-    display: flex;
-    justify-content: space-evenly;
-    border-radius: 0;
-    width: 100%;
-    height: fit-content;
-
-    list-style: none;
   }
 }
