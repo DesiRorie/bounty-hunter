@@ -1,7 +1,12 @@
 import React from "react";
+import DragonLayout from "../gameLayouts/DragonLayout";
 
 const DragonKing = () => {
-  return <div></div>;
+  return (
+    <>
+      <DragonLayout />
+    </>
+  );
 };
 
 export default DragonKing;
